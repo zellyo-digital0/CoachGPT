@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  position: relative;
+  color: #575A7B;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  display: inline-block;
+  transition: all ease 0.6s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+small {
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+/* media style */
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+
+
+/* Dashboard start  */
+.Dashboard {
+  position: relative;
+}
+
+.Dashboard .DashboardLeft {
+  max-width: 100%;
+  border-right: 1px dashed rgb(230, 234, 237);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  max-height: 100vh;
+  height: 100vh;
+  width: 16.806%;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.Dashboard .DashboardLeft .dashLogo {
+  padding-top: 35px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 38.89px;
+}
+
+.Dashboard .DashboardLeft .dashLogo a {}
+
+.Dashboard .DashboardLeft .dashLogo a img {}
+
+.Dashboard .DashboardLeft ::-webkit-scrollbar {
+  width: 0;
+  transition: all ease .6s;
+}
+
+.Dashboard .DashboardLeft:hover ::-webkit-scrollbar {
+  width: 4px;
+  transition: all ease .6s;
+}
+
+/* Track */
+.Dashboard .DashboardLeft ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  transition: all ease .6s;
+}
+
+/* Handle */
+.Dashboard .DashboardLeft ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.Dashboard .DashboardLeft ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  transition: all ease .6s;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem {
+  max-height: 62vh;
+  overflow-y: auto;
+  padding-bottom: 15px;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul {}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li {
+  padding: 0 15px;
+  transition: all ease .6s;
+  margin-bottom: 3px;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem {
+  display: block;
+  padding: 11px 15px 11px 20px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #101136;
+  transition: all ease .6s;
+}
+
+/* 
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem:hover, */
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem.active {
+  background: #FAFAFA;
+  border-radius: 8px;
+  transition: all ease .6s;
+  position: relative;
+  opacity: 1;
+}
+
+/* 
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem:hover::after, */
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem.active::after {
+  opacity: 1;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem::after {
+  transition: all ease .6s;
+  position: absolute;
+  content: "";
+  left: -15px;
+  top: 0;
+  height: 100%;
+  background: #DB0F19;
+  border-radius: 0px 10px 10px 0px;
+  width: 5px;
+  opacity: 0;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem img {
+  margin-right: 15px;
+  vertical-align: middle;
+  max-width: 14px;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem span.text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a .unlockItem {
+  background: #FFFFFF;
+  border: 1px solid #DB0F19;
+  border-radius: 22px;
+  padding: 3px 10px;
+  text-align: center;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #DB0F19;
+  max-width: 123px;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a.linkItem.unlock {
+  padding: 0px 15px 0px 20px;
+  margin-bottom: 10px;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a .unlockItem {
+  margin-top: 5px;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a .unlockItem img {
+  margin-right: 5px;
+}
+
+.Dashboard .DashboardLeft .DashboardListIem ul li a .unlockItem span.textUnlock {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #DB0F19;
+}
+
+.Dashboard .DashboardLeft .AskQuestions {
+  padding: 0 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 16.806%;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box {
+  background: #FFFFFF;
+  border: 1px solid #E6EAED;
+  border-radius: 10px;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxInner {
+  padding: 10px 8px;
+  border-bottom: 1px solid #E6EAED;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxInner img {
+  margin-right: 5px;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxInner span.text {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #101136;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxbody {
+  padding: 15px 10px 10px 10px;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxbody p {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #575A7B;
+  margin-bottom: 16px;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxbody a {
+  padding: 10px 24px;
+  background: #FFFFFF;
+  border: 1px solid #DB0F19;
+  border-radius: 8px;
+  display: block;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxbody a img {
+  margin-right: 10px;
+}
+
+.Dashboard .DashboardLeft .AskQuestions .box .boxbody a span.text {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #DB0F19;
+}
+
+.Dashboard .DashboardHeader {
+  position: fixed;
+  padding-left: 16.806%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-width: 100%;
+  z-index: 9;
+  background: #fff;
+}
+
+.Dashboard .DashboardHeader .d-flex {
+  padding: 30px 30px 26px 30px;
+  border-bottom: 1px solid #E6EAED;
+}
+
+.Dashboard .DashboardHeader .d-flex .itemLeft {}
+
+.Dashboard .DashboardHeader .d-flex .itemLeft a {}
+
+.Dashboard .DashboardHeader .d-flex .itemLeft a img {
+  margin-right: 10px;
+}
+
+.Dashboard .DashboardHeader .d-flex .itemLeft a span.text {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #101136;
+}
+
+.Dashboard .DashboardHeader .d-flex .itemRgiht {}
+
+.Dashboard .DashboardHeader .d-flex .itemRgiht ul {
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+  padding: 5px;
+  width: 213px;
+  max-width: 100%;
+}
+
+.Dashboard .DashboardHeader .d-flex .itemRgiht ul li {}
+
+.Dashboard .DashboardHeader .d-flex .itemRgiht ul li a.leftLink {
+  padding: 0 5px;
+}
+
+.Dashboard .DashboardHeader .d-flex .itemRgiht ul li a.leftLink span.textNumber {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  display: block;
+  color: #101136;
+}
+
+.Dashboard .DashboardHeader .d-flex .itemRgiht ul li a.leftLink span.text {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575A7B;
+}
+
+.Dashboard .DashboardHeader .d-flex .itemRgiht ul li a.rightLink {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #DB0F19;
+  padding: 10px 28px;
+  background: rgb(219 15 25 / 10%);
+  border-radius: 8px;
+
+}
+
+.Dashboard .DashboardMainContent {
+  padding-left: 16.806%;
+  padding-top: 111.4px;
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+
+}
+
+.Dashboard .DashboardMainContent .container {
+  height: 100%;
+}
+
+.Dashboard .DashboardMainContent .ChatArea {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 20px;
+  padding-left: 16.806%;
+}
+
+.Dashboard .DashboardMainContent .ChatArea {}
+
+.Dashboard .DashboardMainContent .ChatArea form {
+  width: 718px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Dashboard .DashboardMainContent .ChatArea form input {
+  background: #FFFFFF;
+  border: 1px solid #E6EAED;
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #575A7B;
+  height: 60px;
+}
+
+.Dashboard .DashboardMainContent .ChatArea form button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.Dashboard .DashboardMainContent .ChatArea form button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.Dashboard .CoachGPTHome {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 140px;
+}
+
+.Dashboard .CoachGPTHome .itemTop {}
+
+.Dashboard .CoachGPTHome .itemTop img {
+  margin-bottom: 10px;
+}
+
+.Dashboard .CoachGPTHome .itemTop h1 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #101136;
+  margin-bottom: 0;
+}
+
+.Dashboard .CoachGPTHome .itemWrapp {
+  padding-top: 40px;
+  max-width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Dashboard .CoachGPTHome .itemWrapp .item {
+  background: #FFFFFF;
+  border: 1px solid #E6EAED;
+  border-radius: 10px;
+}
+
+.Dashboard .CoachGPTHome .itemWrapp .item .itemboxTop {
+  background: #FAFAFA;
+  border-radius: 9px 9px 0px 0px;
+  padding: 12px;
+}
+
+.Dashboard .CoachGPTHome .itemWrapp .item .itemboxTop img {
+  margin-right: 5px;
+}
+
+.Dashboard .CoachGPTHome .itemWrapp .item .itemboxTop span {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #101136;
+}
+
+.Dashboard .CoachGPTHome .itemWrapp .item .itemBox {}
+
+.Dashboard .CoachGPTHome .itemWrapp .item .itemBox p {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #575A7B;
+  margin-bottom: 0;
+  padding: 20px 15px 36px 15px;
+}
+
+.Dashboard .chatWrapp {
+  padding-bottom: 60px;
+}
+
+.Dashboard .chatWrapp .chatBox {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.Dashboard .chatWrapp .chatBox.userQustion {
+  border-bottom: 1px solid #E6EAED;
+  padding: 30px 0;
+}
+
+.Dashboard .chatWrapp .chatBox .media {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Dashboard .chatWrapp .chatBox .media .imgBox {
+  background: #E6EAED;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.Dashboard .chatWrapp .chatBox .media .imgBox img {}
+
+.Dashboard .chatWrapp .chatBox .media .imgBox.homeUser {
+  background: rgb(219 15 25 / 10%);
+}
+
+.Dashboard .chatWrapp .chatBox .media .imgBox.homeUser img {}
+
+.Dashboard .chatWrapp .chatBox .media .media-body {}
+
+.Dashboard .chatWrapp .chatBox .media .media-body p {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #101136;
+}
+
+.Dashboard .chatWrapp .chatBox .media .media-body ul {
+  list-style: decimal;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+.Dashboard .chatWrapp .chatBox .media .media-body ul li {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 10px;
+  color: #101136;
+}
+
+.Dashboard .chatWrapp .chatBox .media .media-body p:last-child {
+  margin-bottom: 0;
+}
+
+.Dashboard .chatWrapp .chatBox .media {}
+
+.Dashboard {}
+
+/* Dashboard end */
